@@ -1,0 +1,37 @@
+
+.f61{
+    color: var(--color2);
+     border-radius: 10px;
+     padding: 1vw;
+     font-size: 1.5vw;
+     font-weight: 700;
+     border: 2px solid var(--color1);
+     text-align: center;
+     position: relative;
+     overflow: hidden;    
+ }
+ 
+ 
+ 
+ .f61:before{
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 2.5em;
+     height: 100%;
+     background: white;
+     opacity: 0.3;
+     transform: translateX(-1em) skewX(-45deg);
+     animation-name: zay;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+ }
+ @keyframes zay{
+     from{
+         transform: translateX(-4em) skewX(-45deg);
+     }
+     to{
+         transform: translateX(10em) skewX(-45deg);
+     }
+ }
